@@ -12,7 +12,6 @@
             .header{
                 text-align: center;
                 margin-top: 100px;
-                
                 border-radius: 10px;
         
             }
@@ -42,7 +41,6 @@
                 background-color: antiquewhite;
                 height: 23px;
                 width: 200px;
-                text-align: left;
                 margin-top: 80px;
                 margin-left: 108px;
                 border-radius: 3px;
@@ -51,7 +49,6 @@
                 background-color: antiquewhite;
                 height: 23px;
                 width: 200px;
-                text-align: left;
                 margin-top: 25px;
                 margin-left: 108px;
                 border-radius: 3px
@@ -63,6 +60,57 @@
                 margin-right: 190px;
                 border-radius: 4px;
                 text-align: center;
+            }
+            @media (max-width: 768px) {
+                .portalTotal {
+                    width: 90%; /* Makes the portal take up 90% of the screen width */
+                    height: auto; /* Adjusts the height based on content */
+                    margin-top: 20px; /* Reduces top margin */
+                }
+
+                .userNameDiv, .passwordDiv {
+                    width: 80%; /* Makes input fields more responsive */
+                    margin-left: 10%; /* Centers them on smaller screens */
+                    margin-top: 15px; /* Adds some space between the elements */
+                }
+
+                .LoginButton {
+                    margin-left: 35%; /* Centers the login button */
+                    margin-right: 35%; /* Centers the login button */
+                    margin-top: 20px; /* Adds space between fields and button */
+                    padding: 10px 20px; /* Adds some padding to the button */
+                }
+
+                #InternetPortalText {
+                    font-size: 14px; /* Reduces the text size for mobile */
+                    margin-top: 15px; /* Adjusts margin for better spacing */
+                }
+
+                .header {
+                    font-size: 18px; /* Adjusts font size for smaller screens */
+                    margin-top: 40px; /* Reduces the top margin for better alignment */
+                }
+            }
+
+            /* Additional media query for very small screens (optional, for extremely small devices) */
+            @media (max-width: 480px) {
+                .header {
+                    font-size: 16px; /* Smaller font size */
+                }
+
+                #InternetPortalText {
+                    font-size: 12px; /* Smaller text size for better readability on small screens */
+                }
+
+                .userNameDiv, .passwordDiv {
+                    width: 90%; /* Further reduce input field width */
+                    margin-left: 5%; /* Adjusts centering on very small screens */
+                }
+
+                .LoginButton {
+                    margin-left: 10%; /* Centers button on small screens */
+                    margin-right: 10%; /* Ensures button is centered */
+                }
             }
 
         </style>
